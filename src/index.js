@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Amplify from "aws-amplify";
 import awsExports from "./aws-exports";
+import CardC from './ui-components/CardC';
+import { Card } from '@aws-amplify/ui-react';
 Amplify.configure(awsExports);
 
 ReactDOM.render( <
     React.StrictMode >
     <
-    App / >
+    CardC / >
     <
     /React.StrictMode>,
     document.getElementById('root')
