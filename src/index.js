@@ -5,7 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Amplify from "aws-amplify";
 import awsExports from "./aws-exports";
+import '@aws-amplify/ui-react/styles.css'; //これがないとスタイル当たらない
 import CardC from './ui-components/CardC';
+import CardB from './ui-components/CardB';
 
 import { Card } from '@aws-amplify/ui-react';
 Amplify.configure(awsExports);
